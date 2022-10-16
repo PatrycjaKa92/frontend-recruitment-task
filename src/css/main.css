@@ -1,3 +1,23 @@
+                                    .reset {
+                                        display: none;
+                                    }
+                                    
+                                    .reset.show {
+                                        position: fixed;
+                                        display: block;
+                                        z-index: 1;
+                                        font-family: 'Roboto';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 100%;
+                                        width: 128px;
+                                        height: 48px;
+                                        background: #E4C1AE;
+                                        border-radius: 32px;
+                                        border: 0;
+                                    }
+                                    
                                     .popup {
                                         display: none;
                                     }
@@ -29,8 +49,13 @@
                                         top: 50%;
                                         left: 50%;
                                         transform: translate(-50%, -50%);
-                                        padding: 20px;
+                                        padding-top: 10px;
+                                        padding-left: 95px;
+                                        padding-right: 95px;
+                                        padding-bottom: 50px;
                                         background: white;
+                                        width: 920px;
+                                        height: 210px;
                                     }
                                     
                                     .alert {
@@ -113,6 +138,10 @@
                                             left: 16%;
                                             top: calc(330px + 96px + 20px);
                                         }
+                                        .popup-content {
+                                            width: auto;
+                                            height: auto;
+                                        }
                                     }
                                     
                                     @media (min-width: 450px) and (max-width: 679.99px) {
@@ -131,6 +160,28 @@
                                         .title {
                                             font-size: 80%;
                                             height: 30px;
+                                        }
+                                        .alert {
+                                            font-size: 25px;
+                                        }
+                                        .counter {
+                                            max-width: 330px;
+                                            font-size: 80%;
+                                        }
+                                        .reset.show {
+                                            font-size: 12px;
+                                            width: 65px;
+                                            height: 20px;
+                                            border-radius: 16px;
+                                            padding: 3px;
+                                        }
+                                        .popup-content {
+                                            padding-top: 5px;
+                                            padding-left: 10px;
+                                            padding-right: 10px;
+                                            padding-bottom: 25px;
+                                            width: auto;
+                                            height: auto;
                                         }
                                     }
                                     
@@ -159,5 +210,27 @@
                                             padding-top: 4px;
                                             padding-left: 12px;
                                             border-radius: 16px;
+                                        }
+                                        .alert {
+                                            font-size: 20px;
+                                        }
+                                        .counter {
+                                            max-width: 330px;
+                                            font-size: 75%;
+                                        }
+                                        .reset.show {
+                                            font-size: 10px;
+                                            width: 60px;
+                                            height: 20px;
+                                            border-radius: 16px;
+                                            padding: 3px;
+                                        }
+                                        .popup-content {
+                                            padding-top: 2px;
+                                            padding-left: 8px;
+                                            padding-right: 8px;
+                                            padding-bottom: 15px;
+                                            width: auto;
+                                            height: auto;
                                         }
                                     }
