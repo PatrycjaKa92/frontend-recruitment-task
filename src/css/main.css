@@ -1,0 +1,163 @@
+                                    .popup {
+                                        display: none;
+                                    }
+                                    
+                                    .popup.show {
+                                        position: fixed;
+                                        display: block;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        z-index: 1;
+                                    }
+                                    
+                                    .popup-background {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        background: #121212;
+                                        opacity: 0.5;
+                                        z-index: 1;
+                                    }
+                                    
+                                    .popup-content {
+                                        z-index: 2;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        padding: 20px;
+                                        background: white;
+                                    }
+                                    
+                                    .alert {
+                                        font-family: 'Roboto';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 42px;
+                                        line-height: 120%;
+                                    }
+                                    
+                                    .counter {
+                                        font-family: 'Roboto';
+                                        font-style: normal;
+                                        font-weight: 300;
+                                        font-size: 16px;
+                                        line-height: 150%;
+                                    }
+                                    
+                                    .background {
+                                        width: 100%;
+                                        max-width: 1440px;
+                                    }
+                                    
+                                    .picture {
+                                        position: absolute;
+                                        width: 505px;
+                                        height: 330px;
+                                        left: 16%;
+                                        top: 96px;
+                                    }
+                                    
+                                    .acapit {
+                                        position: absolute;
+                                        width: 380px;
+                                        height: 250px;
+                                        left: calc(16% + 505px + 95px);
+                                        top: 136px;
+                                    }
+                                    
+                                    .title {
+                                        width: 380px;
+                                        height: 50px;
+                                        font-family: 'Roboto';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 42px;
+                                        line-height: 120%;
+                                    }
+                                    
+                                    .text {
+                                        width: 380px;
+                                        height: 96px;
+                                        font-family: 'Roboto';
+                                        font-style: normal;
+                                        font-weight: 300;
+                                        font-size: 16px;
+                                        line-height: 150%;
+                                    }
+                                    
+                                    .push {
+                                        font-family: 'Roboto';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 100%;
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: flex-start;
+                                        padding: 16px 40px;
+                                        gap: 10px;
+                                        width: 128px;
+                                        height: 48px;
+                                        background: #E4C1AE;
+                                        border-radius: 32px;
+                                        border: 0;
+                                    }
+                                    
+                                    @media (min-width: 680px) and (max-width: 1150px) {
+                                        .acapit {
+                                            left: 16%;
+                                            top: calc(330px + 96px + 20px);
+                                        }
+                                    }
+                                    
+                                    @media (min-width: 450px) and (max-width: 679.99px) {
+                                        .picture {
+                                            width: 330px;
+                                            height: 198px;
+                                        }
+                                        .acapit {
+                                            left: 16%;
+                                            top: calc(198px + 96px + 20px);
+                                        }
+                                        .text {
+                                            max-width: 330px;
+                                            font-size: 80%;
+                                        }
+                                        .title {
+                                            font-size: 80%;
+                                            height: 30px;
+                                        }
+                                    }
+                                    
+                                    @media only screen and (max-width: 449.99px) {
+                                        .picture {
+                                            width: 202px;
+                                            height: 132px;
+                                        }
+                                        .acapit {
+                                            left: 16%;
+                                            top: calc(132px + 96px + 20px);
+                                        }
+                                        .text {
+                                            max-width: 202px;
+                                            font-size: 80%;
+                                        }
+                                        .title {
+                                            font-size: 80%;
+                                            height: 30px;
+                                        }
+                                        .push {
+                                            top: 60%;
+                                            width: 64px;
+                                            height: 24px;
+                                            font-size: 80%;
+                                            padding-top: 4px;
+                                            padding-left: 12px;
+                                            border-radius: 16px;
+                                        }
+                                    }
